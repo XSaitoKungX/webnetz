@@ -5,7 +5,7 @@
 
 ## Gedanken zu den Aufgaben
 
-========================================== **Datenbankdesign** ==========================================
+======================= **Datenbankdesign** =======================
 
 - Erstellen der Datenbank: Zuerst erstellst du eine Datenbank mit dem Namen "case_studies_db" (falls sie noch nicht existiert). Dies kann mit der SQL-Anweisung `CREATE DATABASE IF NOT EXISTS case_studies_db;` erreicht werden. Dann wechselst du zur Verwendung dieser Datenbank mit `USE case_studies_db;`.
 
@@ -17,27 +17,27 @@
 
 - Einfügen von Beispieldaten: Du fügst einige Beispiel-Datensätze in die Tabellen ein, um die Anwendung zu testen. Du fügst beispielsweise einen Redakteur, einige Kunden und einige Fallstudien hinzu. Stelle sicher, dass du die Pfade zu den Bildern und Logos entsprechend deiner Verzeichnisstruktur anpasst.
 
-========================================== **Registrierung und Anmeldung des Redakteurs** ==========================================
+======================= **Registrierung und Anmeldung des Redakteurs** =======================
 
 - Der Code ist eine PHP-Datei, die eine Anmeldeseite erstellt. Es gibt zwei Formulare: eins für die Anmeldung und eins für die Registrierung. Die eingegebenen Daten werden über die POST-Methode an den Server gesendet. Die Anmeldeinformationen werden überprüft, und bei erfolgreicher Anmeldung wird der Benutzer eingeloggt. Beim Registrieren werden die eingegebenen Daten in der Datenbank gespeichert. Die Seite enthält auch Links zu rechtlichen Informationen. Es werden JavaScript-Dateien für zusätzliche Funktionalitäten geladen.
 
-========================================== **Verwaltung der Kunden** ==========================================
+======================= **Verwaltung der Kunden** =======================
 
 - Die Verwaltung der Kunden erfolgt durch Funktionen zum Erstellen, Bearbeiten und Löschen von Kunden. Dabei habe ich die Logos etc. der Kunden in separaten Verzeichnissen gespeichert, die einen eindeutigen Bezug zu jedem Kunden haben.
 
-========================================== **Verwaltung der Case Studies** ==========================================
+======================= **Verwaltung der Case Studies** =======================
 
 - Die Verwaltung der Case Studies erfolgt soweit genau wie bei der Verwaltung der Kunden, zumindest die Funktionalität.
 
-========================================== **Datenabruf und Anzeige** ==========================================
+======================= **Datenabruf und Anzeige** =======================
 
 - Die Daten werden aus der Datenbank abgerufen und im Browser für den Nutzer angezeigt. Dabei werden nur aktive Kunden und deren Case Studies dargestellt, um die Übersichtlichkeit zu verbessern.
 
-========================================== **Fehlerbehandlung** ==========================================
+======================= **Fehlerbehandlung** =======================
 
 - Die Fehlerbehandlung wurde sorgfältig implementiert, um spezifische Fehlermeldungen auszugeben und dem Benutzer bei auftretenden Problemen angemessen zu informieren.
 
-========================================== **Bonus: Optische Darstellung (Frontend)** ==========================================
+======================= **Bonus: Optische Darstellung (Frontend)** =======================
 
 Bei der Entwicklung der optischen Darstellung der Webapplikation habe ich verschiedene CSS-Dateien verwendet, um eine klare Struktur und eine leichtere Wartbarkeit des Codes zu erreichen.
 
@@ -52,7 +52,7 @@ Die Datei "css.html" ist ein HTML-Dokument, das dazu dient, die CSS-Dateien in d
 
 Durch die Verwendung separater CSS-Dateien für die spezifischen Seiten "Case Studies" und "Kunden" kann ich das Styling besser verwalten und die Wiederverwendbarkeit von CSS-Regeln verbessern. Dadurch bleibt der Code übersichtlich, leichter lesbar und wartbar. Die zentrale "style.css"-Datei gewährleistet die Konsistenz des Designs über die gesamte Webapplikation hinweg.
 
-========================================== **Anmerkung** ==========================================
+======================= **Anmerkung** =======================
 
 ## Anmerkung
-- Aktuell kann man keine Passwörter zurücksetzen. Die Funktion ist zurzeit nicht Funktionsfähig!
+- Aktuell kann man das Passwort nicht zurücksetzen. Die Funktion ist zurzeit nicht Funktionsfähig!
